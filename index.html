@@ -9,10 +9,12 @@
   <body>
     <div id="gameContainer">
       <div id="playerPanel">
-        <img src="images/human.jpg" width="150px" height="135px" class="img" />
+        <img src="images/human.jpg" width="150px" height="135px" class="avatar"/>
         <h3>You</h3>
-        <p id="humanScore">Score:</p>
-        <p id="humanChoice">Choice:</p>
+        <div id="playerStats">
+        <p>Score: <span id="humanScore"></span></p>
+        <p>Choice: <span id="humanChoice"></span></p>
+        </div>
       </div>
       <div id="gameplayPanel">
         <div id="display"></div>
@@ -23,10 +25,12 @@
         </div>
       </div>
       <div id="computerPanel">
-        <img src="images/computer.jpg" width="150px" height="135px" class="img" />
+        <img src="images/computer.jpg" width="150px" height="135px" class="avatar" />
         <h3>Computer</h3>
-        <p id="computerScore">Score:</p>
-        <p id="computerChoice">Choice:</p>
+        <div id="computerStats">
+        <p>Score: <span id="computerScore"></span></p>
+        <p>Choice: <span id="computerChoice"></span></p>
+        </div>
       </div>
     </div>
     <div id="menuContainer">

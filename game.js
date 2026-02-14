@@ -34,8 +34,8 @@ function getComputerChoice() {
 }
 
 function updateScore() {
-humanScoreText.textContent = `Score: ${humanScore}`
-computerScoreText.textContent = `Score: ${computerScore}`
+humanScoreText.textContent = humanScore
+computerScoreText.textContent = computerScore
 }
 
 function playGame(humanChoice, computerChoice) {
@@ -46,8 +46,8 @@ function playGame(humanChoice, computerChoice) {
 
   let x = humanChoice.at(0).toUpperCase() + humanChoice.slice(1).toLowerCase();
 
-  humanChoiceText.textContent = `Choice: ${x}`
-  computerChoiceText.textContent = `Choice: ${computerChoice}`
+  humanChoiceText.textContent = x
+  computerChoiceText.textContent = computerChoice
 
   let roundResult = "";
 

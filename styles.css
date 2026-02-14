@@ -4,21 +4,26 @@ body {
     flex-direction: column;
     align-items: center;
 }
-.img {
-    border-radius: 15px;
-    background-color: white;
-    border: 2px solid black;
-    box-shadow: 0 0 10px rgb(247, 157, 247);
-}
 h3 {
     color:rgb(247, 157, 247);
+    font-size: 20px;
+
 }
 h2 {
     color: white;
     font-size: 40px;
 }
-a{
+a {
     text-decoration: none;
+}
+p {
+    font-size: 20px;
+    color: white;
+    font-weight: 300;
+}
+span {
+font-size: 20px;
+color: greenyellow;
 }
 
 #gameContainer {
@@ -97,4 +102,15 @@ a{
 .btn-hover {
     color: rgb(247, 157, 247);
     background-color: rgb(50, 25, 73);
+}
+.avatar {
+    border-radius: 15px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 10px rgb(247, 157, 247);
+}
+#playerStats, #computerStats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
