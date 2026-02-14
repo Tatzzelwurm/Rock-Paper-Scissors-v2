@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <div id="gameContainer">
+      <div id="playerPanel">
+        <img src="images/human.jpg" width="150px" height="135px" class="img" />
+        <h3>You</h3>
+        <p id="humanScore">Score:</p>
+        <p id="humanChoice">Choice:</p>
+      </div>
+      <div id="gameplayPanel">
+        <div id="display"></div>
+        <div id="buttonsContainer">
+          <button id="rock" class="b">Rock</button>
+          <button id="paper" class="b">Paper</button>
+          <button id="scissors" class="b">Scissors</button>
+        </div>
+      </div>
+      <div id="computerPanel">
+        <img src="images/computer.jpg" width="150px" height="135px" class="img" />
+        <h3>Computer</h3>
+        <p id="computerScore">Score:</p>
+        <p id="computerChoice">Choice:</p>
+      </div>
+    </div>
+    <div id="menuContainer">
+      <div id="projectHeader">
+      <img src="icons/TOP.svg" width="50px" width="50px">
+      <h2>
+        <a
+          href="https://www.theodinproject.com/"
+          id="topLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          >The Odin Project</a
+        >
+         |
+         <a
+          href="https://github.com/Tatzzelwurm/Rock-Paper-Scissors-v2"
+          id="projectLink"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Rock Paper Scissors v2</a
+        >
+      </h2>
+      </div>
+      <button class="playBtn">PLAY GAME</button>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
