@@ -8,18 +8,30 @@ const display = document.querySelector("#display")
 const menu = document.querySelector("#menuContainer")
 const gameContainer = document.querySelector("#gameContainer")
 const playBtn = document.querySelector(".playBtn")
+const backToMenuBtn = document.querySelector("#backToMenuBtn")
 const body = document.body
 
 playBtn.addEventListener("mouseenter",() => playBtn.classList.add("btn-hover"))
 playBtn.addEventListener("mouseleave",() => playBtn.classList.remove("btn-hover"))
 playBtn.addEventListener("click", () => startNewGame())
 
+backToMenuBtn.addEventListener("mouseenter",() => playBtn.classList.add("btn-hover"))
+backToMenuBtn.addEventListener("mouseleave",() => playBtn.classList.remove("btn-hover"))
+backToMenuBtn.addEventListener("click", () => returnToMenu())
+
 
 
 function startNewGame() {
 gameContainer.style.visibility = "visible"
 gameContainer.style.height = "500px"
+playBtn.classList.remove("btn-hover")
 body.removeChild(menu)
+}
+
+function returnToMenu() {
+  gameContainer.style.visibility = ""
+  gameContainer.style.height = ""
+  body.appendChild(menu)
 }
 
 function getComputerChoice() {
