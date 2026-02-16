@@ -9,6 +9,8 @@ const menu = document.querySelector("#menuContainer")
 const gameContainer = document.querySelector("#gameContainer")
 const playBtn = document.querySelector(".playBtn")
 const backToMenuBtn = document.querySelector("#backToMenuBtn")
+const restartGameBtn = document.querySelector("#restartGameBtn")
+const gameElements = [display,computerChoiceText,humanChoiceText,computerScoreText,humanScoreText]
 const body = document.body
 
 playBtn.addEventListener("mouseenter",() => playBtn.classList.add("btn-hover"))
@@ -18,6 +20,8 @@ playBtn.addEventListener("click", () => startNewGame())
 backToMenuBtn.addEventListener("mouseenter",() => playBtn.classList.add("btn-hover"))
 backToMenuBtn.addEventListener("mouseleave",() => playBtn.classList.remove("btn-hover"))
 backToMenuBtn.addEventListener("click", () => returnToMenu())
+
+restartGameBtn.addEventListener("click", () => restartGame())
 
 
 
@@ -31,9 +35,15 @@ body.removeChild(menu)
 function returnToMenu() {
   gameContainer.style.visibility = ""
   gameContainer.style.height = ""
+  restartGame()
   body.appendChild(menu)
 }
 
+function restartGame() {
+humanScore = 0
+computerScore = 0
+gameElements.forEach(value => value.textContent = "")
+}
 function getComputerChoice() {
   const a = Math.floor(Math.random() * 3);
   if (a == 0) {
@@ -101,7 +111,7 @@ function playGame(humanChoice, computerChoice) {
   
 }
 
-const buttons = document.querySelectorAll(".b");
+const buttons = document.querySelectorAll(".choice-btn");
 
 buttons.forEach(button => 
   button.addEventListener("click", () => playGame(button.id, getComputerChoice())) )
