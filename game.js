@@ -64,7 +64,7 @@ computerScoreText.textContent = computerScore
 
 function playGame(humanChoice, computerChoice) {
   if (humanScore === 5 || computerScore === 5) {
-    display.textContent = "Game OVER!"
+    display.textContent = "GAME OVER!"
     return;
   }
 
@@ -118,4 +118,10 @@ const buttons = document.querySelectorAll(".choice-btn");
 buttons.forEach(button => 
   button.addEventListener("click", () => playGame(button.id, getComputerChoice())) )
 
+buttons.forEach(button => 
+  button.addEventListener("mouseenter",() => button.classList.add("btn-hover")))
+
+buttons.forEach(button => 
+  button.addEventListener("mouseleave",() => button.classList.remove("btn-hover")))
+  
 
