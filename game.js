@@ -17,10 +17,12 @@ playBtn.addEventListener("mouseenter",() => playBtn.classList.add("btn-hover"))
 playBtn.addEventListener("mouseleave",() => playBtn.classList.remove("btn-hover"))
 playBtn.addEventListener("click", () => startNewGame())
 
-backToMenuBtn.addEventListener("mouseenter",() => playBtn.classList.add("btn-hover"))
-backToMenuBtn.addEventListener("mouseleave",() => playBtn.classList.remove("btn-hover"))
+backToMenuBtn.addEventListener("mouseenter",() => backToMenuBtn.classList.add("btn-hover"))
+backToMenuBtn.addEventListener("mouseleave",() => backToMenuBtn.classList.remove("btn-hover"))
 backToMenuBtn.addEventListener("click", () => returnToMenu())
 
+restartGameBtn.addEventListener("mouseenter",() => restartGameBtn.classList.add("btn-hover"))
+restartGameBtn.addEventListener("mouseleave",() => restartGameBtn.classList.remove("btn-hover"))
 restartGameBtn.addEventListener("click", () => restartGame())
 
 
