@@ -4,60 +4,91 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <title>Rock-Paper-Scissors</title>
   </head>
   <body>
     <div id="gameContainer">
       <div id="playerPanel">
-        <img src="images/human.jpg" width="150px" height="135px" class="avatar"/>
+        <img
+          src="images/crown.png"
+          width="100px"
+          height="100px"
+          id="crownPlayer"
+        />
+        <img
+          src="images/human.jpg"
+          width="150px"
+          height="135px"
+          class="avatar"
+        />
         <h3>You</h3>
         <div id="playerStats">
-        <p>Score: <span id="humanScore"></span></p>
-        <p>Choice: <span id="humanChoice"></span></p>
+          <p>Score: <span id="humanScore"></span></p>
+          <p>Choice: <span id="humanChoice"></span></p>
         </div>
       </div>
       <div id="gameplayPanel">
         <div id="actionPanel">
-        <button id="backToMenuBtn" class="action-btn">Back to Menu</button>
-        <button id="restartGameBtn" class="action-btn">Restart game</button>
+          <button id="backToMenuBtn" class="action-btn">Back to Menu</button>
+          <button id="restartGameBtn" class="action-btn">Restart game</button>
         </div>
-        <div id="display"></div>
+        <div id="display">Rock, Paper or Scissors?</div>
         <div id="buttonsContainer">
-         <button class="choice-btn" id="rock" title="Rock"><i class="fa-regular fa-hand-back-fist"></i></button>
-         <button class="choice-btn" id="paper" title="Paper"><i class="fa-regular fa-hand"></i></button>
-         <button class="choice-btn" id="scissors" title="Scissors"><i class="fa-regular fa-hand-scissors"></i></button>
+          <button class="choice-btn" id="rock" title="Rock">
+            <i class="fa-regular fa-hand-back-fist"></i>
+          </button>
+          <button class="choice-btn" id="paper" title="Paper">
+            <i class="fa-regular fa-hand"></i>
+          </button>
+          <button class="choice-btn" id="scissors" title="Scissors">
+            <i class="fa-regular fa-hand-scissors"></i>
+          </button>
         </div>
       </div>
       <div id="computerPanel">
-        <img src="images/computer.jpg" width="150px" height="135px" class="avatar" />
+        <img
+          src="images/crown.png"
+          width="100px"
+          height="100px"
+          id="crownComputer"
+        />
+        <img
+          src="images/computer.jpg"
+          width="150px"
+          height="135px"
+          class="avatar"
+        />
         <h3>Computer</h3>
         <div id="computerStats">
-        <p>Score: <span id="computerScore"></span></p>
-        <p>Choice: <span id="computerChoice"></span></p>
+          <p>Score: <span id="computerScore"></span></p>
+          <p>Choice: <span id="computerChoice"></span></p>
         </div>
       </div>
     </div>
     <div id="menuContainer">
       <div id="projectHeader">
-      <img src="icons/TOP.svg" width="50px" width="50px">
-      <h2>
-        <a
-          href="https://www.theodinproject.com/"
-          id="topLink"
-          target="_blank"
-          rel="noopener noreferrer"
-          >The Odin Project</a
-        >
-         |
-         <a
-          href="https://github.com/Tatzzelwurm/Rock-Paper-Scissors-v2"
-          id="projectLink"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Rock Paper Scissors v2</a
-        >
-      </h2>
+        <img src="icons/TOP.svg" width="50px" width="50px" />
+        <h2>
+          <a
+            href="https://www.theodinproject.com/"
+            id="topLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            >The Odin Project</a
+          >
+          |
+          <a
+            href="https://github.com/Tatzzelwurm/Rock-Paper-Scissors-v2"
+            id="projectLink"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Rock Paper Scissors v2</a
+          >
+        </h2>
       </div>
       <button class="playBtn">PLAY GAME</button>
     </div>
